@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            border: 1px solid black;
+        }
+        .red-named-color {
+            background-color: red;
+        }
+        .red-rgb-color {
+            background-color: rgb(255, 0, 0);
+        }
+        .red-hex-color {
+            background-color: #ff0000;
+        }
+        .red-hsl-color {
+            background-color: hsl(0, 100%, 50%);
+        }
+        .red-rgba-color {
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+        .red-hsla-color {
+            background-color: hsla(0, 100%, 50%, 0.5);
+        }
+        .d-flex {
+            display: flex;
+        }
+        .justify-content-center {
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="d-flex justify-content-center">
+        <h1>Colors</h1>
+    </section>
+    
+    <!-- named-color (Color nombrado -> blue, blueviolet, chocolate )  -->
+    <div class="red-named-color">Named Color</div>
+    <!-- rgb-color (Color RGB -> red,green,blue)  -->
+    <div class="red-rgb-color">RGB Color</div>
+    <!-- hex-color (Color hexadecimal -> FFFFFF)  -->
+    <div class="red-hex-color">hexadecimal</div>
+    <!-- hsl-color (Color HSL -> Hue, Saturation, Lightness)  -->
+    <div class="red-hsl-color">HSL Color</div>
+    <!-- rgba-color (Color RGBA -> red,green,blue,alpha)  -->
+    <div class="red-rgba-color">RGBA Color</div>
+    <!-- hsla-color (Color HSLA -> Hue, Saturation, Lightness, Alpha)  -->
+    <div class="red-hsla-color">HSLA Color</div>
+
+</body>
+
+</html>

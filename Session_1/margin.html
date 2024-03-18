@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            color: black;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        div:last-child {
+            margin: 12px !important;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="d-flex justify-content-center">
+            <h1>Margin</h1>
+        </section>
+        <div>Box 1</div>
+        <div>Box 2</div>
+    </main>
+</body>
+
+</html>
+
+<!-- Con respecto al colapso de margenes, se puede observar que el margen de 10px se colapsa entre los dos divs, por lo que el margen total entre los dos divs es de 10px, no de 20px. -->
+
+<!-- 1. ¿Cuando ocurre el colapso de márgenes? -->
+
+<!-- Márgenes adyacentes entre elementos hermanos: Si no hay bordes, padding, contenido inline, block formatting context creado o clearance para separar los márgenes superior e inferior de los bloques, los márgenes colapsarán. -->
+
+<!-- Márgenes entre padres e hijos: El margen superior de un primer hijo o el margen inferior del último hijo de un elemento pueden colapsar con el margen de su padre si no hay bordes, padding, contenido inline, o altura mínima (min-height) para separarlos. -->
+
+<!-- Márgenes de elementos vacíos: Si un elemento no tiene bordes, padding, contenido inline, height o min-height, sus márgenes superior e inferior colapsarán entre sí. -->
+
+<!-- 2. ¿Cómo se resuelve el colapso de márgenes? -->
+
+<!-- El mayor margen gana: Cuando dos márgenes colapsan, el resultado es el margen más grande de los dos. No se suman. -->
+
+<!-- Márgenes negativos: Si uno de los márgenes es negativo, se resta del mayor de los márgenes positivos. Si ambos son negativos, se toma el más cercano a cero (el menos negativo). -->
+
+<!-- Padres sin bordes ni padding: Si el margen superior de un bloque colapsa con el margen superior de su primer hijo, y el bloque no tiene borde superior, padding superior ni contenido inline antes del hijo, el margen superior del hijo "sale" del bloque y se convierte en el margen superior del bloque. -->
+
+<!-- Consideraciones -->
+
+<!-- El colapso de márgenes solo ocurre en los márgenes verticales, no en los horizontales. -->
+<!-- El colapso de márgenes no ocurre en elementos flotantes, absolutos o fijos. -->
+<!-- El colapso de márgenes no ocurre en elementos en línea, ya que estos no tienen márgenes superiores ni inferiores. -->
+<!-- El colapso de márgenes no ocurre en elementos que establecen un nuevo contexto de formato, como elementos con desbordamiento diferente de visible, ej: overflow: hidden. -->
