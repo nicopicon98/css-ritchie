@@ -1,0 +1,72 @@
+Taller: Finalizando y Estilizando tu Sitio Web
+
+Objetivo General
+Terminar la construcción de tu sitio web y agregarle navegabilidad, asegurando que se presente de manera profesional y sea fácil de navegar para los visitantes.
+El objetivo será dar estilo y cohesión visual a las páginas de tu sitio web, centrándonos en la sección de "portfolio", "blog", "news", "Sobre nosotros", y "contacto", además de unificar todo mediante un Navbar consistente.
+
+* Aplicar estilos CSS para mejorar la apariencia visual del sitio web.
+* Implementar un menú de navegación cohesivo que una las diferentes secciones del sitio.
+* Estilizar específicamente cada sección del sitio según los requisitos y contenidos dados.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Criterios de aceptación:
+
+Con base en el diseño de tu sitio web y los criterios de aceptacion: https://github.com/nicopicon98/html-ritchie/blob/main/Session_1/workshop/2nd_workshop.txt
+
+Parte 1: Estilizar el Navbar
+
+Objetivo: Crear (si no lo has hecho) un menú de navegación estético y funcional en la parte superior de cada página.
+
+Tareas:
+
+- Define el estilo del Navbar para que sea fijo en la parte superior y sea responsivo.
+- Utiliza flexbox para organizar los enlaces del menú.
+- Aplica estilos visuales como color de fondo, color de texto, y hover para los enlaces.
+- Tareas:
+
+Parte 2: Estilizar la Sección de "Portfolio"
+
+Objetivo: Diseñar una sección de "portfolio" atractiva y funcional.
+
+Tareas:
+
+- Crear o Estiliza el header para destacar tu área de especialización.
+- Organiza la "Introducción" y la "Galería de proyectos" de manera clara y visualmente atractiva.
+- Cada proyecto en la galería debe tener un estilo consistente, con imágenes, descripciones, y enlaces bien presentados.
+- Implementa efectos visuales sutiles como transiciones para los enlaces (hover) y las imágenes.
+
+Parte 3: Unificar Estilos de Secciones Adicionales ("blog", "news", "Sobre nosotros", "contacto")
+
+Objetivo: Asegurar que todas las secciones adicionales del sitio mantengan una cohesión estilística con el resto del sitio.
+
+Tareas:
+
+- Aplica un esquema de colores y tipografía consistente en todas las páginas. Puedes utilizar la siguiente web para generar paletas aleatorias: https://paletadecolores.com.mx/
+- Asegura que los headers, main, y footers de cada sección estén bien diferenciados.
+- En la sección "Sobre nosotros", utiliza estilos para destacar los subtítulos, párrafos, imágenes y listas.
+- En la sección "contacto", asegura que el formulario sea accesible y estéticamente agradable.
+
+Parte 4: Responsividad y Pruebas Finales
+
+Objetivo: Verificar que todas las páginas del sitio web sean responsivas y funcionen correctamente en distintos dispositivos y tamaños de pantalla.
+
+Tareas:
+
+- Revisa cada página en diferentes resoluciones, incluyendo tabletas y móviles.
+- Ajusta los estilos mediante media queries para solucionar cualquier problema de visualización para los siguientes breakpoints: 600px, 900px, 1200px.
+- Realiza pruebas de usabilidad para asegurar que la navegación entre secciones sea intuitiva y fluida.
+- Utilizar la pseudoclase :hover para dar feedback visual a los usuarios cuando interactúan con los enlaces y botones.
+
+Nota:
+
+1. Todos los estilos deben ser aplicados en un archivo CSS externo.
+2. Asegurate de que cada pagina tenga su propio header con background tipo hero.
+3. Asegurate de que cada pagina tenga su propio footer.
+4. Asegurate de que cada pagina el mismo navbar.
+5. Usa flexbox para organizar los elementos de la pagina.
+6. Usa media queries para hacer tu pagina responsiva.
+7. Asegurate de elegir una paleta de colores y tipografía consistente para todo el sitio.
+8. Asegurate de que el formulario de contacto sea accesible y estéticamente agradable.
+9. El formulario de contacto no debe ser funcional, solo debe ser estético.
+10. Utiliza las pseudoclases visited, hover, active, focus para dar feedback visual a los usuarios cuando interactúan con los enlaces, botones e inputs.
