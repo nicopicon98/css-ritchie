@@ -1,20 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        main > header > h1#mytitle{
+        /* Selector de elemento */
+        h1 {
+            color: brown;
+        }
 
+        h2 {
+            color: purple;
+        }
+
+        /* Selector de clase */
+        .my-class {
+            color: blue;
+        }
+        /* 0,0,0,0,0
+            1st -> !important
+            2nd -> inline styles
+            3rd -> id
+            4th -> class, attributes, pseudo-classes
+            5th -> elements, pseudo-elements
+        */
+        main > header.my-class > h1#my-title{
+
+        }
+
+        /* Selector de id */
+        #my-title {
+            color: yellow;
+        }
+
+        /* Selector de atributo */
+        [type="text"]{
+            color: green;
+        }
+
+        [disabled]{
+            background-color: red;
         }
     </style>
 </head>
+
 <body>
     <main>
-        <header>
+        <header class="my-class">
             <h1 id="my-title">Mi titulo</h1>
+            <h2>No se si heredo</h2>
+            <input type="text">
         </header>
+        <div class="" style="width:160px;height:160px">
+            Hola mundo
+        </div>
     </main>
 </body>
+
 </html>
