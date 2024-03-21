@@ -1,0 +1,33 @@
+/* Default styles */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: MKD;
+  margin: 0;
+}
+
+:root {
+  /* Fuentes */
+  --mainFont: Roboto, sans-serif;
+  /* Colores */
+  --mainColor: #471754;
+  /* Box Shadow */
+  --mainColor2: 'some value'
+  /* Espaciado */
+}
+
+@font-face {
+  font-family: MKD;
+  src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

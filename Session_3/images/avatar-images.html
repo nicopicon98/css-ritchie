@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar Techniques</title>
+    <style>
+        :root{
+            --avatarPlaceholder: url(https://www.w3schools.com/w3images/avatar3.png);
+        }
+        .avatar-dimensions {
+            width: 250px;
+            height: 250px;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            display: inline-block;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Para avatares abstractos con gradientes */
+        .avatar-gradient {
+            background: linear-gradient(135deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), var(--avatarPlaceholder);
+            border-radius: 50%;
+            background-size: cover;
+            background-position: top center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Técnica 1: Imagen Directa con Clase Avatar -->
+    <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" class="avatar avatar-dimensions">
+
+    <!-- Técnica 2: Avatar Abstracto con Gradiente -->
+    <div class="avatar-gradient avatar-dimensions"></div>
+</body>
+
+</html>

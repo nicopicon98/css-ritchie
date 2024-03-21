@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            height: 70vh;
+            background-position-x: center;
+            background-position-y: center;
+        }
+        .v-h-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .v-h-center h1{
+            color: white;
+            font-size: 2rem;
+        }
+        .my-section {
+            position: relative;
+        }
+        .my-section img {
+            width: 100%;
+            opacity: 0.2;
+        }
+        .my-section h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- By Background -->
+    <header class="header">
+        <div class="v-h-center">
+            <h1>Background Image</h1>
+        </div>
+    </header>
+    <hr>
+    <!-- By Image -->
+    <main>
+        <section class="my-section">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <h1>Background Image</h1>
+        </section>
+    </main>
+</body>
+</html>

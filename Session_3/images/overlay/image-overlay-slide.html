@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0;
+            transition: .5s;
+            background-color: #008CBA;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .container:hover .overlay {
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Image overlay -->
+    <!-- Fade in text on hover -->
+    <div class="container">
+        <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Hello World</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- Notas -->
+
+<!-- 
+    propiedad overflow: hidden; para que el texto no se desborde en el overlay.
+        La propiedad overflow: hidden; en la clase .overlay cumple una función esencial en el efecto visual que se está implementando con este CSS. Aquí te explico el porqué:
+            - Contener Elementos Hijos: El .overlay es un contenedor que al principio tiene height: 0; debido a esto, si cualquier contenido hijo se desbordara más allá de esta altura (como .text), overflow: hidden; asegura que ese desbordamiento no sea visible y se mantenga dentro de los límites del contenedor .overlay.
+            - Crear Efectos de Revelación: La intención de este diseño es que el .overlay se "expanda" para cubrir la imagen cuando el usuario pasa el ratón por encima (hover). El cambio de height: 0; a height: 100%; anima el .overlay para que cubra toda la imagen. Sin overflow: hidden;, el texto y el fondo azul del .overlay serían visibles fuera de su contenedor, arruinando el efecto de revelación.
+            - Estética y Limpieza del Diseño: Al ocultar el desbordamiento, se mantiene una apariencia limpia y se controla el flujo del contenido en la transición, haciendo que el efecto de la animación se vea claro y profesional.
+
+ -->

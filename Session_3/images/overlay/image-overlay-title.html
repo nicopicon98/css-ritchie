@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: relative;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            opacity: 0;
+            color: white;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            transition: .3s ease-in-out;
+            text-align: center;
+            font-size: 26px;
+            padding: 30px 30px;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="container">
+        <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Hello World</div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- Notas -->
+<!-- 
+    Uso de display block en imagen:
+        - Cuando un elemento <img> no tiene display: block; explícitamente establecido, por defecto toma display: inline;. Los elementos inline respetan los espacios en blanco del HTML, lo que puede resultar en un pequeño espacio extra al final de la línea, como si fuera un espacio entre palabras. Este espacio adicional es a menudo el que causa que la imagen parezca "salirse" de su contenedor cuando se aplican estilos adicionales como el padding o bordes.
+
+
+    Uso de box-sizing: border-box;
+        - Al no definirle box-sizing: border-box si no por defecto content-box, el tamaño del contenedor overlay se vera afectado por cualquier padding, 
+ -->
