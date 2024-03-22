@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr repeat(3, 25%) minmax(100px, 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .item-1{
+            /* grid-row-start: 1;
+            grid-row-end: 4; */
+            grid-row: span 3; /* This is a shorthand for the above two lines */
+            grid-column: span 2;
+        }
+        .item-2{
+            grid-area: 1 / 3 / 2 / 5; /* This is a shorthand for grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+        }
+        .item-3 {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid container">
+        <div class="item-1 item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis repellat eveniet
+            sequi laboriosam cumque a ad quis iure illum. Ut omnis repellat eveniet sequi laboriosam cumque a ad quis
+            iure illum. Ut omnis repellat eveniet sequi laboriosam cumque a ad quis iure illum. Ut omnis repellat
+            eveniet sequi laboriosam cumque a ad quis iure illum. Ut omnis repellat eveniet sequi laboriosam cumque a ad
+            quis iure illum. Ut omnis repellat eveniet sequi laboriosam cumque a ad quis iure illum. Ut omnis repellat
+            eveniet sequi laboriosam cumque a ad quis iure illum. Ut omnis repellat eveniet sequi laboriosam cumque a ad
+            quis iure illum. Ut omnis repellat eveniet sequi laboriosam cumque a ad quis iure illum. Ut omnis repellat
+            eveniet sequi laboriosam cumque a ad quis iure illum. Ut omnis repellat eveniet sequi laboriosam cumque a ad
+            quis iure illum. Ut omnis repellat eveniet sequi laboriosam cumque a ad quis iure illum. Ut omnis repellat
+            eveniet sequi laboriosam cumque a ad quis iure illum.</div>
+        <div class="item-2 item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis repellat eveniet
+            sequi laboriosam cumque a ad quis iure illum.</div>
+        <div class="item-3 item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis repellat eveniet
+            sequi laboriosam cumque a ad quis iure illum.</div>
+        <div class="item-4 item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis repellat eveniet
+            sequi laboriosam cumque a ad quis iure illum.</div>
+        <div class="item-5 item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis repellat eveniet
+            sequi laboriosam cumque a ad quis iure illum.</div>
+        <div class="item-6 item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis repellat eveniet
+            sequi laboriosam cumque a ad quis iure illum.</div>
+    </div>
+</body>
+
+</html>

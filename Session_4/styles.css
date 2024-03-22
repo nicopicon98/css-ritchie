@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.item {
+  border: 2px solid black;
+}
+
+.item-1 {
+  background-color: antiquewhite;
+}
+.item-2 {
+  background-color: aqua;
+}
+.item-3 {
+  background-color: red;
+}
+.item-4 {
+  background-color: azure;
+}
+.item-5 {
+  background-color: beige;
+}
+.item-6 {
+  background-color: bisque;
+}
