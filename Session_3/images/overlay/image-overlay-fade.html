@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         .container {
             position: relative;
             width: 50%;
@@ -27,7 +32,7 @@
             right: 0;
             opacity: 0;
             height: 100%;
-            transition: .5s;
+            transition: opacity .5s cubic-bezier(0.075, 0.82, 0.165, 1);
             background-color: #008CBA;
         }
 
@@ -59,4 +64,5 @@
     </div>
 
 </body>
+
 </html>

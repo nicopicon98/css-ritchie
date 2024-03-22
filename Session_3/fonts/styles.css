@@ -11,22 +11,22 @@ html {
 }
 
 body {
-  font-family: MKD;
+  font-family: var(--mainFont);
   margin: 0;
 }
 
 :root {
   /* Fuentes */
-  --mainFont: Roboto, sans-serif;
+  --mainFont: PEPITO, sans-serif;
   /* Colores */
   --mainColor: #471754;
   /* Box Shadow */
-  --mainColor2: 'some value'
+  --mainColor2: 
   /* Espaciado */
 }
 
 @font-face {
-  font-family: MKD;
+  font-family: PEPITO;
   src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;

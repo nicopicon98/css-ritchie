@@ -22,20 +22,21 @@
             max-width: 1200px;
             width: 90%;
             margin: 0 auto;
+            /* centrar horizontalmente  */
         }
 
-        main>section.gallery {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
+
 
         main>section>div>img {
             width: 100%;
             height: auto;
+            /* display: block; */
             /* height: 180px; */
             /* object-fit: cover; */
-            display: block;
+            /* display: inline; */
+            /* display: block; */
+            /* border-radius: 15px; */
+
         }
 
         main>section.title__section {
@@ -43,11 +44,19 @@
             justify-content: center;
         }
 
+        main>section.gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            /* flex-wrap: nowrap; */
+        }
+
         main>section.gallery>.my-image {
             flex: 0 0 calc((100% - 30px) / 4);
             transition: opacity .3s ease;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             border-radius: 15px;
+            z-index: 1;
             overflow: hidden;
         }
 
@@ -55,19 +64,23 @@
             opacity: 0.6;
             cursor: pointer;
         }
-        @media screen and (max-width: 992px) {
+
+        @media screen and (min-width: 992px) {
             main>section.gallery>.my-image {
-                flex: 0 0 calc((100% - 20px)/3)
+                flex: 0 0 calc((100% - 20px)/3);
+                /* flex-grow: 0; */
+                /* flex-shrink: 0; */
+                /* flex-basis: calc(100) */
             }
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (min-width: 600px) {
             main>section.gallery>.my-image {
                 flex: 0 0 calc((100% - 20px)/2)
             }
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 599) {
             main>section.gallery>.my-image {
                 flex-basis: 100%;
             }
@@ -132,7 +145,6 @@
         </section>
         <hr>
     </main>
-    <!-- <img src="https://images.unsplash.com/photo-1504542227056-9178533a9175?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> -->
 </body>
 
 </html>

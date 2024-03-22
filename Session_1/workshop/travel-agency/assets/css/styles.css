@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
 :root {
   
   /* Fonts */
@@ -17,7 +18,6 @@
   --normalSpacing: 50px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
 /* Fonts */
 /*Globals*/
 
@@ -31,11 +31,7 @@ html {
 }
 
 body {
-  font-family: var(--paragraphFont);
-  font-size: 100%;
-  line-height: 1;
   margin: 0;
-  padding: 0;
 }
 
 a {
