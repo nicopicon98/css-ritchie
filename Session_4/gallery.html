@@ -21,10 +21,10 @@
         .gallery-container {
             height: 70vh;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr); /*1fr 1fr 1fr 1fr 1fr 1fr*/
             /* grid-template-rows: repeat(4, 150px);   */
             grid-auto-rows: 150px;
-            gap: 10px;
+            gap: 10px 10px;
         }
 
         .item {
@@ -35,7 +35,7 @@
         }
 
         .item:hover{
-            transform: scale(1.02);
+            scale: 1.02;
             opacity: 0.7    ;
             cursor: pointer;
         }
@@ -47,14 +47,15 @@
         }
 
         .item-1 {
-            grid-column: 1; /* 1st column only */
+            grid-column: 1 / 2; /* 1st column only */
             grid-row: span 4; /* 1st row to 2nd row */
         }
 
         .item-2{
-            grid-column: 2 / 4; /* 2nd column to 3rd column */
+            grid-column: 2 / -1; /* 2nd column to 3rd column */
             grid-row: 1; /* 1st row only */
         }
+
         .item-4{
             grid-row: span 2;
         }

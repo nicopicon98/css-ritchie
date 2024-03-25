@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header class="header container">
+        <form action="/search" method="get">
+            <input type="search" name="q" placeholder="Buscar...">
+        </form>
+
+        <div class="logo">
+            <a href="index.html">
+                <!-- <img src="logo.png" alt="JSY Logo"> -->
+                <h1>JSY</h1>
+            </a>
+            <nav class="main_navbar">
+                <ul>
+                    <li><a href="home.html">Home & Living</a></li>
+                    <li><a href="home.html">Accesories</a></li>
+                    <li><a href="home.html">Stationery</a></li>
+                    <li><a href="home.html">Sale</a></li>
+                    <li><a href="home.html">Gift Card</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="access_navbar">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Cart (<span>0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero__cta">
+                <h2>The Gift of Good Style</h2>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or
+                    double click me to add your own content and make changes to the font.</p>
+                <button class="shop-button" role="button">Show Now</button>
+            </div>
+            <div class="img">
+                <img src="assets/images/hero.webp" alt="Hero Image">
+            </div>
+        </section>
+        <!-- Products -->
+        <section class="products container">
+            <h3>Featured Products</h3>
+            <div class="products__gallery">
+                <div class="product">
+                    <div class="product__image">
+                        <img src="assets/images/products/collection-1_large.webp" alt="Product 1">
+                    </div>
+                    <div class="product__info">
+                        <h3>Product 1</h3>
+                        <p><del>$150.00</del> $100.00</p>
+                        <button class="add-to-cart" role="button">Add to Cart</button>
+                    </div>
+                    <div class="product__discount">33%</div>
+                </div>
+                <div class="product">
+                    <div class="product__image">
+                        <img src="assets/images/products/collection-2_large.webp" alt="Product 2">
+                    </div>
+                    <div class="product__info">
+                        <h3>Product 2</h3>
+                        <p>$80.00</p>
+                        <button class="add-to-cart" role="button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product__image">
+                        <img src="assets/images/products/collection-3_large.webp" alt="Product 3">
+                    </div>
+                    <div class="product__info">
+                        <h3>Product 3</h3>
+                        <p><del>$200.00</del> $150.00</p>
+                        <button class="add-to-cart" role="button">Add to Cart</button>
+                    </div>
+                    <div class="product__discount">25%</div>
+                </div>
+                <div class="product">
+                    <div class="product__image">
+                        <img src="assets/images/products/collection-4_large.webp" alt="Product 4">
+                    </div>
+                    <div class="product__info">
+                        <h3>Product 4</h3>
+                        <p>$100.00</p>
+                        <button class="add-to-cart" role="button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Season sale -->
+        <section class="season_sale">
+            <svg id="wave" preserveAspectRatio="none" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 120" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                        <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                        <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                    d="M0,24L17.1,26C34.3,28,69,32,103,40C137.1,48,171,60,206,58C240,56,274,40,309,40C342.9,40,377,56,411,58C445.7,60,480,48,514,40C548.6,32,583,28,617,28C651.4,28,686,32,720,42C754.3,52,789,68,823,70C857.1,72,891,60,926,50C960,40,994,32,1029,26C1062.9,20,1097,16,1131,14C1165.7,12,1200,12,1234,24C1268.6,36,1303,60,1337,62C1371.4,64,1406,44,1440,36C1474.3,28,1509,32,1543,44C1577.1,56,1611,76,1646,76C1680,76,1714,56,1749,54C1782.9,52,1817,68,1851,68C1885.7,68,1920,52,1954,42C1988.6,32,2023,28,2057,40C2091.4,52,2126,80,2160,88C2194.3,96,2229,84,2263,66C2297.1,48,2331,24,2366,26C2400,28,2434,56,2451,70L2468.6,84L2468.6,120L2451.4,120C2434.3,120,2400,120,2366,120C2331.4,120,2297,120,2263,120C2228.6,120,2194,120,2160,120C2125.7,120,2091,120,2057,120C2022.9,120,1989,120,1954,120C1920,120,1886,120,1851,120C1817.1,120,1783,120,1749,120C1714.3,120,1680,120,1646,120C1611.4,120,1577,120,1543,120C1508.6,120,1474,120,1440,120C1405.7,120,1371,120,1337,120C1302.9,120,1269,120,1234,120C1200,120,1166,120,1131,120C1097.1,120,1063,120,1029,120C994.3,120,960,120,926,120C891.4,120,857,120,823,120C788.6,120,754,120,720,120C685.7,120,651,120,617,120C582.9,120,549,120,514,120C480,120,446,120,411,120C377.1,120,343,120,309,120C274.3,120,240,120,206,120C171.4,120,137,120,103,120C68.6,120,34,120,17,120L0,120Z">
+                </path>
+                <defs>
+                    <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                        <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                        <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)"
+                    d="M0,84L17.1,78C34.3,72,69,60,103,58C137.1,56,171,64,206,66C240,68,274,64,309,68C342.9,72,377,84,411,74C445.7,64,480,32,514,16C548.6,0,583,0,617,18C651.4,36,686,72,720,86C754.3,100,789,92,823,80C857.1,68,891,52,926,46C960,40,994,44,1029,38C1062.9,32,1097,16,1131,18C1165.7,20,1200,40,1234,42C1268.6,44,1303,28,1337,24C1371.4,20,1406,28,1440,34C1474.3,40,1509,44,1543,40C1577.1,36,1611,24,1646,34C1680,44,1714,76,1749,82C1782.9,88,1817,68,1851,60C1885.7,52,1920,56,1954,54C1988.6,52,2023,44,2057,48C2091.4,52,2126,68,2160,62C2194.3,56,2229,28,2263,24C2297.1,20,2331,40,2366,56C2400,72,2434,84,2451,90L2468.6,96L2468.6,120L2451.4,120C2434.3,120,2400,120,2366,120C2331.4,120,2297,120,2263,120C2228.6,120,2194,120,2160,120C2125.7,120,2091,120,2057,120C2022.9,120,1989,120,1954,120C1920,120,1886,120,1851,120C1817.1,120,1783,120,1749,120C1714.3,120,1680,120,1646,120C1611.4,120,1577,120,1543,120C1508.6,120,1474,120,1440,120C1405.7,120,1371,120,1337,120C1302.9,120,1269,120,1234,120C1200,120,1166,120,1131,120C1097.1,120,1063,120,1029,120C994.3,120,960,120,926,120C891.4,120,857,120,823,120C788.6,120,754,120,720,120C685.7,120,651,120,617,120C582.9,120,549,120,514,120C480,120,446,120,411,120C377.1,120,343,120,309,120C274.3,120,240,120,206,120C171.4,120,137,120,103,120C68.6,120,34,120,17,120L0,120Z">
+                </path>
+                <defs>
+                    <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
+                        <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                        <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)"
+                    d="M0,72L17.1,74C34.3,76,69,80,103,70C137.1,60,171,36,206,34C240,32,274,52,309,50C342.9,48,377,24,411,20C445.7,16,480,32,514,42C548.6,52,583,56,617,56C651.4,56,686,52,720,58C754.3,64,789,80,823,86C857.1,92,891,88,926,88C960,88,994,92,1029,90C1062.9,88,1097,80,1131,76C1165.7,72,1200,72,1234,76C1268.6,80,1303,88,1337,88C1371.4,88,1406,80,1440,76C1474.3,72,1509,72,1543,60C1577.1,48,1611,24,1646,18C1680,12,1714,24,1749,40C1782.9,56,1817,76,1851,80C1885.7,84,1920,72,1954,66C1988.6,60,2023,60,2057,56C2091.4,52,2126,44,2160,40C2194.3,36,2229,36,2263,32C2297.1,28,2331,20,2366,20C2400,20,2434,28,2451,32L2468.6,36L2468.6,120L2451.4,120C2434.3,120,2400,120,2366,120C2331.4,120,2297,120,2263,120C2228.6,120,2194,120,2160,120C2125.7,120,2091,120,2057,120C2022.9,120,1989,120,1954,120C1920,120,1886,120,1851,120C1817.1,120,1783,120,1749,120C1714.3,120,1680,120,1646,120C1611.4,120,1577,120,1543,120C1508.6,120,1474,120,1440,120C1405.7,120,1371,120,1337,120C1302.9,120,1269,120,1234,120C1200,120,1166,120,1131,120C1097.1,120,1063,120,1029,120C994.3,120,960,120,926,120C891.4,120,857,120,823,120C788.6,120,754,120,720,120C685.7,120,651,120,617,120C582.9,120,549,120,514,120C480,120,446,120,411,120C377.1,120,343,120,309,120C274.3,120,240,120,206,120C171.4,120,137,120,103,120C68.6,120,34,120,17,120L0,120Z">
+                </path>
+            </svg>
+            <div class="season_sale__info">
+                <h2>Catch Our End of Season Sale</h2>
+                <button>Shop Now</button>
+            </div>
+        </section>
+        <!-- Home & Living -->
+        <section class="home_living">
+            <h3>Home & Living Essentials</h3>
+            <div class="home_living_media">
+                <div class="item"><img src="assets/images/products/home_living_1.webp" alt=""></div>
+                <div class="item">
+                    <h4>Geometric Bedding</h4>
+                    <p><del>$99.99</del> <span>$79.99</span></p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="item">
+                    <h4>Geometric Bedding</h4>
+                    <p><del>$99.99</del> <span>$79.99</span></p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="item"><img src="assets/images/products/home_living_2.webp" alt=""></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="navbar-section container">
+            <div class="footer__nav_shop">
+                <h5>Shop</h5>
+                <nav>
+                    <ul>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Home & Living</a></li>
+                        <li><a href="#">Accesories</a></li>
+                        <li><a href="#">Stationery</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Gift Card</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__nav_help_links">
+                <h5>Helpful Links</h5>
+                <nav>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__nav_contact">
+                <h5>Contact</h5>
+                <nav>
+                    <ul>
+                        <li><a href="#">info@mysite.com</a></li>
+                        <li>123-456-7890</li>
+                        <li>500 Terry Francine Street, San Francisco, CA 94158</li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <img src="assets/images/icons/social_instagram.png" alt="Facebook">
+                    <img src="assets/images/icons/social_facebook.png" alt="Facebook">
+                    <img src="assets/images/icons/social_whatssap.png" alt="Facebook">
+                    <img src="assets/images/icons/social_twitter.png" alt="Facebook">
+                </div>
+            </div>
+            <div class="footer__nav_subscribe">
+                <h5>Subscribe</h5>
+                <p>Subscribe to our newsletter and be among the first to hear about new arrivals, events and special offers.</p>
+                <form>
+                    <input type="email" name="" id="">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
