@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+        div.item {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+
+        div.item:nth-child(2){
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+</body>
+</html>
+
+<!-- flex-shrink: Cuando tenemos espacio reducido, en que factor decrementara mi elemento en relacion con sus hermanos? 
+        - Si flex-shrink: 0, entonces no se reducira.
+        - Si flex-shrink: 1, entonces se reducira en la misma proporcion que los demas elementos.
+        - Si flex-shrink: 2, entonces se reducira en el doble de proporcion que los demas elementos.
+        - Si flex-shrink: n, entonces se reducira en el n de proporcion que los demas elementos.
+
+        Notas:
+        - Por defecto, todos los elementos tienen flex-shrink: 1.
+        - Si el espacio es insuficiente, entonces se reducira en proporcion a su flex-shrink.
+        - Si el espacio es suficiente, entonces no se reducira.
+        - Si el espacio es excesivo, entonces se expandira en proporcion a su flex-grow.
+        - El valor de flex-shrink no puede ser negativo.
+        - El valor de flex-shrink puede ser un numero decimal.
+        - El valor de flex-shrink puede ser un numero entero.
+        - Es importante notar que flex-shrink es una proporción, no un valor fijo, y se aplica solo cuando el espacio total es menor que el requerido por los elementos.
+--> 

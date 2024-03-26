@@ -1,0 +1,81 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+/* Utilies */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.p-2{
+    padding: 8px;
+}
+
+/* Image cards */
+
+main > section.my-content-cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+main > section.my-content-cards > article.card {
+    flex-basis: calc((100% - 30px) / 3);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+main > section.my-content-cards > article.card > hr {
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    left: 0;
+}
+
+main > section.my-content-cards > article.card > div.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    display: block;
+}
+
+main > section.my-content-cards > article.card > div.card-body,
+main > section.my-content-cards > article.card > div.card-footer{
+    padding: 8px;
+}
+
+main > section.my-content-cards > article.card > div.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main > section.my-content-cards > article.card > div.card-footer > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+main > section.my-content-cards > article.card > div.card-footer img {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+/* Utilies */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Image cards */
+
+main > section.my-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+main > section.my-images > article {
+    flex-basis: calc((100% - 30px) / 4);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+main > section.my-images > article > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}

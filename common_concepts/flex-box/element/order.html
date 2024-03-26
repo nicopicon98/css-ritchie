@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        main>section {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100vh;
+            gap: 10px;
+        }
+
+        article {
+            /* width: 20%; */
+            flex: 0 1 calc((100% - 30px) / 4);
+            /* flex-grow, flex-shrink, flex-basis */
+            height: calc(100%/3);
+            border: 1px solid black;
+            background-color: red;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        article:nth-child(1) {
+            order: 1;
+            /* Mueve la primera caja a la tercera posición */
+        }
+
+        article:nth-child(3) {
+            order: 2;
+            /* Mueve la tercera caja a la segunda posición */
+        }
+
+        article:nth-child(2) {
+            order: 3;
+            /* Mueve la segunda caja a la cuarta posición */
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <article>Item 1</article>
+            <article>Item 2</article>
+            <article>Item 3</article>
+            <article>Item 4</article>
+            <article>Item 5</article>
+        </section>
+    </main>
+</body>
+
+</html>
+
+<!-- Order -->
+
+<!-- 
+    Nota: El orden de los elementos primero, debe ir dada por el orden en el que se encuentran en el DOM,
+    Todos los elementos, inician con un valor de 0, si se desea mover un elemento a una posición diferente
+    se debe asignar un valor diferente a order, el cual puede ser positivo o negativo.
+
+    En el ejemplo anterior, se mueve la primera caja a la tercera posición, la tercera caja a la segunda posición
+    y la segunda caja a la cuarta posición. Todo esto para lograr mover la caja 1 a la tercera posición.
+
+ -->

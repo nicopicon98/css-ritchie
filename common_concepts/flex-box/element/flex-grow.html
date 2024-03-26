@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+
+        div.item {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+
+        div.item:nth-child(1) {
+            flex-grow: 2;
+        }
+
+        div.item:nth-child(2) {
+            flex-grow: 1;
+        }
+        div.item:nth-child(3) {
+            flex-grow: 1;
+        }
+        div.item:nth-child(4) {
+            flex-grow: 3;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- flex-grow: Cuando tenemos espacio adicional, en que factor crecera mi elemento en comparacion con los demas elementos.
+        - Si flex-grow: 0, entonces no se expandira mas alla de su tamaño original.
+        - Si flex-grow: 1, entonces se expandira en la misma proporcion que los demas elementos.
+        - Si flex-grow: 2, entonces se expandira en el doble de proporcion que los demas elementos.
+        - Si flex-grow: n, entonces se expandira en el n de proporcion que los demas elementos.
+
+        Notas:
+        - Por defecto, todos los elementos tienen flex-grow: 0.
+        - Si el espacio es insuficiente, entonces no se expandira.
+        - Si el espacio es suficiente, entonces se expandira en proporcion a su flex-grow.
+        - Si el espacio es excesivo, entonces se expandira en proporcion a su flex-grow.
+        - El valor de flex-grow no puede ser negativo.
+        - El valor de flex-grow puede ser un numero decimal.
+        - El valor de flex-grow puede ser un numero entero.
+        - Es importante notar que flex-grow es una proporción, no un valor fijo, y se aplica solo cuando el espacio total es mayor que el requerido por los elementos.
+ -->

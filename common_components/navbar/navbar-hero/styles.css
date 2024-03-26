@@ -1,0 +1,90 @@
+/* Global Reset */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* Elements Reset */
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Utilies */
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Section */
+
+header {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/imgs/hero.jpg);
+  height: 75vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+header > div.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+header > div.navigation > h2 {
+  margin: 0;
+  color: white;
+  font-size: 1.8rem;
+}
+
+header > div.navigation > nav.navbar > ul {
+    display: flex;
+    gap: 10px;
+}
+
+header > div.navigation > nav.navbar > ul > li > a {
+    color: white
+}
+
+header > div.cta_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header > div.cta_info > p {
+    font-style: italic;
+    margin-top: 0;
+}
+
+header > div.cta_info > button {
+    background-color: transparent;
+    padding: 8px 16px;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}

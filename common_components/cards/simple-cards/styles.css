@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+/* Utilies */
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+/* Cards */
+
+main > section.cards {
+    display: flex;
+    gap: 10px;
+}
+
+main > section.cards > article {
+    flex-basis: calc((100% - 30px) / 4);
+    border: 1px solid black;
+    height: 150px;
+}
