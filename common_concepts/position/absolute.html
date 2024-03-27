@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        div.relative {
+            position: relative;
+            background-color: blue;
+        }
+        div.relative::after {
+            content: "";
+            position: absolute;
+        }
+        div.absolute {
+            z-index: 1;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="relative">
+                My relative element
+                <div class="absolute">My absolute element</div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+
+<!-- 
+    Notas: Por defecto, los elementos con position: absolute; se mueven de su 
+    posición original, pero si se les aplica top, right, bottom o left, se moverán en 
+    la dirección indicada.
+
+
+ -->

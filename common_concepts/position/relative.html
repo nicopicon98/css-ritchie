@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            position: relative;
+        }
+
+        main > section {
+            position: relative;
+        }
+
+        main > section > article {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+            position: relative;
+            background-color: blue;
+            top: 0;
+        }
+
+        
+        main > section > article:nth-child(2) {
+            background-color: green;
+        }
+
+        main > section > article:nth-child(4) {
+            top: -200px;
+            bottom: -100px;
+            background-color: red;
+        }
+
+        main > section > article:nth-child(2) {
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <article>item 1</article>
+            <article>item 2</article>
+            <article>item 3</article>
+            <article>item 4</article>
+        </section>
+    </main>
+</body>
+</html>
+
+<!-- 
+    Notas: Por defecto, los elementos con position: relative; no se mueven de su 
+    posición original, pero si se les aplica top, right, bottom o left, se moverán en 
+    la dirección indicada.  
+ -->

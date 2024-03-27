@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box; /* each box will only contemplate its content */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+:root {
+    /* Color */
+    --dark-green: #1A2E35;
+    --light-green: #009C86;
+    --aqua-green: #00DFC0;
+    /* Spaces */
+    --space-normal: 40px;
+}
+ 
+/* Utilities */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.my-3{
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+/* Login */
+
+main > section.login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form image */
+
+main > section.login > div.my-image > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Form content */
+
+main > section.login > div.my-form {
+    width: 50%;
+    box-shadow: 1px 1px 20px rgba(0,0,0,0.4);
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+main > section.login > div.my-form > h1 {
+    text-align: center;
+}
+
+main > section.login > div.my-form > form.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main > section.login > div.my-form > form.login-form > button {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 6px;
+    background-color: var(--light-green);
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    color: white;
+}
+
+main > section.login > div.my-form > form.login-form > button:hover {
+    background-color: var(--dark-green);
+    transform: translate(0px, -5px);
+}
+
+main > section.login > div.my-form > form.login-form > button:active {
+    background-color: var(--aqua-green);
+    box-shadow: 1px 1px 20px black;
+}
+
+input[name="email"],
+input[name="password"] {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border-color: rgba(0,0,0,0.4)
+}
+
